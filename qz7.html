@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>雨量</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+</head>
+
+<body>
+    <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <div class="row">
+            <div class="col-md-12" style="z-index: 20;margin-top: 50px;">
+                <h1 style="font-weight: bold;color: var(--bs-orange);">台北市及時雨量資料</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 bt"><a id="btDownload" class="btn btn-lg button fs-4 mt-3" role="button" target="_blank">下載資料</a></div>
+        </div>
+        <div class="row pt-5">
+            <div class="col">
+                <div class="col">
+                    <h1 id="years" style="font-size: 50px; font-weight: 600;">Years</h1>
+                    <div id="countdown">
+                        <ul class="list-unstyled d-flex flex-row" style="max-width: 700px;">
+                            <li style="font-size: 69px;"><span id="months" class="span" style="font-size: 50px;">00</span><span class="d-flex justify-content-center fs-5 fs-lg-1">Months</span></li>
+                            <li style="font-size: 69px;"><span id="days" class="span" style="font-size: 50px;">00</span><span class="d-flex justify-content-center fs-5 fs-lg-1">Days</span></li>
+                            <li style="font-size: 69px;"><span id="hours" class="span" style="font-size: 50px;">00</span><span class="d-flex justify-content-center fs-5 fs-lg-1">Hours</span></li>
+                            <li style="font-size: 69px;"><span id="minutes" class="span" style="font-size: 50px;">00</span><span class="d-flex justify-content-center fs-5 fs-lg-1">Minutes</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row pt-3">
+            <div class="col">
+                <div class="table-responsive" style="filter: hue-rotate(0deg);">
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>地點</th>
+                                <th>雨量</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script type="module" src="./js/qz7.js"></script>
+</body>
+
+</html>
